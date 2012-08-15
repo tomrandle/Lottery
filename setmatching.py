@@ -7,7 +7,9 @@ numberofmatches =  len(set(a) & set(b))
 
 distribution = [0] * 6
 
-
 distribution[numberofmatches] += 1
 
-print distribution
+print "MATCHES"
+
+for index, item in enumerate(distribution):
+    print index + 1, item
