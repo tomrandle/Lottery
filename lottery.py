@@ -5,7 +5,7 @@ distribution = [0] * 7
 
 winningset = set(winningnumbers)
 
-for i in range (1,100000):
+for i in range (1,10000000):
 
 	numbers = []
 
