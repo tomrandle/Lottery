@@ -1,8 +1,11 @@
 import random
 
-winners = 0
+winningnumbers = [1,2,3,4,5,6]
+distribution = [0] * 7
 
-for i in range (1,10000000):
+winningset = set(winningnumbers)
+
+for i in range (1,100000):
 
 	numbers = []
 
@@ -29,9 +32,11 @@ for i in range (1,10000000):
 	ticket.sort()
 	#print ticket	
 
-	if ticket == [1,2,3,4,5,6]:
-		winners += 1
 
-print "Number of winners: %d" % winners
+	numberofmatchingnumbers = len(winningset & set(ticket))
+	distribution[numberofmatchingnumbers] += 1
 
+print "MATCHES"
 
+for index, item in enumerate(distribution):
+    print index, item
