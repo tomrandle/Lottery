@@ -15,16 +15,13 @@ for i in range (1,7):
 	selectednumber = random.randrange(1,remainingnumbers)
 	numberindex = numbers.index(selectednumber)
 
-	print "Number selected %d" % selectednumber
+	del numbers[i]
 
-	if numberindex:
-		del numbers[numberindex]
-	else:
-		selectednumber = random.randrange(1,remainingnumbers)
 
 
 	ticket.append(selectednumber)
 
+ticket.sort()
 print ticket	
 
 
