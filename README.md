@@ -1,0 +1,4 @@
+Lottery
+=======
+
+Simple lottery simulator
