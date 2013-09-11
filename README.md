@@ -1,4 +1,4 @@
 Lottery
 =======
 
-Simple lottery simulator
+Simple lottery simulator in python. 
